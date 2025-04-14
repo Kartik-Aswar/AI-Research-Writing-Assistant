@@ -50,7 +50,7 @@ def generate_content(topic):
         model="gemini/gemini-2.0-flash",
     )
 
-    search_tool = SerperDevTool(n_results=1)
+    search_tool = SerperDevTool(n_results=3)
 
     # First Agent: Senior Research Analyst
     senior_research_analyst = Agent(
