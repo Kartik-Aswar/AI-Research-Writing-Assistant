@@ -1,27 +1,33 @@
-# AI Content Research & Writing Assistant
 
-A powerful content generation system built with CrewAI that combines research, analysis, and writing capabilities to produce high-quality blog posts on any topic.
+# AI-Research-Writing-Assistant
+
+A powerful content generation system built with **CrewAI** that combines intelligent research, advanced language models like **gemini-2.0-flash**, and Serper-powered search to generate high-quality blog posts on any topic.
+
+![Screenshot 2025-04-16 003608](https://github.com/user-attachments/assets/f9446042-9836-49b7-b947-ff6673bcc2fb)
+
+*Web interface preview*
 
 ## 🚀 Features
 
-- Automated research using Wikipedia and WolframAlpha
-- AI-powered content writing and analysis
-- Sentiment analysis and keyword extraction
-- Streamlit web interface for easy interaction
-- Downloadable markdown output
+- 🔍 Automated research using **Serper API** and **Google Gemini**
+- ✍️ AI-powered writing via **CrewAI framework**
+- 📊 Sentiment analysis and keyword extraction
+- 🖥️ Interactive **Streamlit** web interface
+- 📥 Downloadable **Markdown** output for easy publishing
 
 ## 📋 Prerequisites
 
 - Python 3.9+
-- OpenAI API key
-- WolframAlpha API key
+- API keys for:
+  - Google Gemini
+  - Serper API
 
 ## 🛠️ Installation
 
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd CrewAI-Demo
+cd AI-Research-Writing-Assistant
 ```
 
 2. Create and activate a virtual environment:
@@ -37,52 +43,52 @@ pip install -r requirements.txt
 
 4. Set up environment variables:
    - Copy `.env.example` to `.env`
-   - Add your API keys to `.env`:
+   - Add your API keys:
 ```env
-OPENAI_API_KEY=your_openai_api_key
+GEMINI_API_KEY=your_google_gemini_key
 SERPER_API_KEY=your_serper_key
 ```
 
 ## 🚀 Running the Application
 
 ### Command Line Version
-Run the basic version using:
 ```bash
 python app.py
 ```
 
-### Web Interface
-Launch the Streamlit web interface:
+### Streamlit Web Interface
 ```bash
 streamlit run streamlit_app.py
 ```
-Then open your browser and navigate to `http://localhost:8501`
+Then go to [http://localhost:8501](http://localhost:8501)
 
 ## 💻 Usage
 
-1. **Web Interface**:
-   - Enter your desired topic in the sidebar
-   - Adjust the temperature setting if needed
-   - Click "Generate Content"
-   - Wait for the AI to generate your article
-   - Download the result as a markdown file
+### Web Interface:
+1. Enter your desired topic in the sidebar
+2. Adjust temperature (creativity level)
+3. Click **Generate Content**
+4. View AI-generated blog post
+5. Download as `.md` (Markdown file)
 
-2. **Command Line**:
-   - Edit the topic in `app.py`
-   - Run the script
-   - Results will be printed to console
+![Markdown Output Preview](./assets/download_preview.png)
+*Markdown download preview*
 
-## 🔧 Project Structure
+### Command Line:
+1. Edit the topic inside `app.py`
+2. Run the script
+3. Results will print to console
+
+## 🗂️ Project Structure
 
 ```
-ai-content-assistant/
-├── streamlit_app.py    # Web interface
-├── app.py             # Command line version
-├── requirements.txt   # Project dependencies
-├── .env              # Environment variables
-└── README.md         # Documentation
+AI-Research-Writing-Assistant/
+├── streamlit_app.py     # Streamlit interface
+├── app.py               # CLI version
+├── requirements.txt     # Dependencies
+├── .env.example         # Sample environment vars
+├── README.md            # Documentation
+└── assets/              # App screenshots and preview images
+    ├── app_interface.png
+    └── download_preview.md
 ```
-
-
-
-
