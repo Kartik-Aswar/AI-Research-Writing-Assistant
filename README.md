@@ -88,7 +88,4 @@ AI-Research-Writing-Assistant/
 ├── requirements.txt     # Dependencies
 ├── .env.example         # Sample environment vars
 ├── README.md            # Documentation
-└── assets/              # App screenshots and preview images
-    ├── app_interface.png
-    └── download_preview.md
 ```
